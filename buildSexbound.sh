@@ -17,7 +17,7 @@ mkdir -p $DATA_DIR
 mkdir -p $DATA_BUILD_DIR
 
 #clean identities file
-echo "{" > $PLAYER_IDENTITIES_FILE
+echo "" > $PLAYER_IDENTITIES_FILE
 for file in $PLAYER_DATA/*.player
 do
 	file=${file##*/}
@@ -31,6 +31,6 @@ do
 	echo "," >> $PLAYER_IDENTITIES_FILE
 done
 
-echo "}" >> $PLAYER_IDENTITIES_FILE
+#echo "}" >> $PLAYER_IDENTITIES_FILE
 
 echo "Build finished... Have a nice game"
