@@ -2,6 +2,7 @@ bin
 obj
 *.cbp
 *.depend
+*.layout
 
 # Prerequisites
 *.d

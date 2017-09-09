@@ -1,9 +1,12 @@
 # depslib dependency file v1.0
-1504817113 source:c:\users\alex\documents\projects\buildsexbounddata\main.cpp
+1504941723 source:c:\users\alex\documents\projects\buildsexbounddata\main.cpp
 	<fstream>
 	<iostream>
 	<string>
 	<vector>
+	<boost/filesystem.hpp>
+	<boost/regex.hpp>
+	<windows.h>
 	"json.hpp"
 
 1504809164 c:\users\alex\documents\projects\buildsexbounddata\json.hpp
