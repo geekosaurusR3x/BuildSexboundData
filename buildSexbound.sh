@@ -26,11 +26,11 @@ do
 
 	$("$BASE/linux/dump_versioned_json" $PLAYER_DATA_FILE $PLAYER_DATA_DUMP_JSON)
 
-	#echo "{$file:" >> $PLAYER_IDENTITIES_FILE
 	$(cat $PLAYER_DATA_DUMP_JSON | jq ' .content | {(.uuid) : .identity} ' >> $PLAYER_IDENTITIES_FILE)
 	echo "," >> $PLAYER_IDENTITIES_FILE
 done
 
-#echo "}" >> $PLAYER_IDENTITIES_FILE
+#remove last coma
+sed -i '$ s/.$//' $PLAYER_IDENTITIES_FILE
 
 echo "Build finished... Have a nice game"
